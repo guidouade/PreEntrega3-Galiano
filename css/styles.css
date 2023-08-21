@@ -1,0 +1,813 @@
+@charset "UTF-8";
+a {
+  text-decoration: none; /* Define si el texto va a estar subrayado (underline), si va estar subrayado por arriba (overline) o tachando el texto (line-through) */
+  color: greenyellow;
+  text-transform: none;
+  transition: 0.3s ease;
+  flex-direction: row;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  font-size: 1.5rem;
+  align-items: center;
+}
+ul li {
+  text-decoration: none; /* Define si el texto va a estar subrayado (underline), si va estar subrayado por arriba (overline) o tachando el texto (line-through) */
+  margin: 0 0.75em 0 0.75em; /* Separación entre el borde y el afuera de la caja. Es parte del espacio externo. */
+}
+ul:hover a {
+  color: #575757;
+}
+ul:hover a:hover {
+  color: #8EAAFB;
+}
+
+@media (max-width: 992px) {
+  a {
+    text-decoration: none; /* Define si el texto va a estar subrayado (underline), si va estar subrayado por arriba (overline) o tachando el texto (line-through) */
+    color: greenyellow;
+    text-transform: none;
+    transition: 0.3s ease;
+    margin-top: 1.2rem;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    font-size: 1.5rem;
+    align-items: center;
+    margin-left: -5rem;
+  }
+  ul li {
+    text-decoration: none; /* Define si el texto va a estar subrayado (underline), si va estar subrayado por arriba (overline) o tachando el texto (line-through) */
+    margin: 0 0.75em 0 0.75em; /* Separación entre el borde y el afuera de la caja. Es parte del espacio externo. */
+  }
+  ul:hover a {
+    color: #575757;
+  }
+  ul:hover a:hover {
+    color: #8EAAFB;
+  }
+}
+/* Para el cuerpo del HTML */
+body {
+  font-family: "Lora"; /* Define el tipo de Letra */
+  background: linear-gradient(rgba(28, 83, 2, 0.915), rgba(28, 83, 2, 0.915));
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway";
+  text-align: center; /* Define si va estar a la derecha, al medio, a la izquiera y justificado */
+}
+
+@media (max-width: 600px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway";
+    text-align: center; /* Define si va estar a la derecha, al medio, a la izquiera y justificado */
+    white-space: nowrap;
+  }
+}
+.titulo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.logo {
+  margin-left: 10.5rem;
+  margin-right: 10.5rem;
+}
+
+.site-heading {
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  line-height: 7;
+  font-family: "Raleway"; /* Define el tipo de letra */
+  text-align: center; /* Define si va estar a la derecha, al medio, a la izquiera y justificado */
+  display: flex;
+  margin: left;
+  justify-content: center;
+}
+.site-heading .site-heading-upper {
+  display: block;
+  font-size: 2rem; /* Define el tamaño de la letra */
+  font-weight: 800; /* Define si es negrita o normal de la letra */
+  display: inline;
+  text-align: center;
+}
+.site-heading .site-heading-lower {
+  font-size: 8rem; /* Define el tamaño de la letra */
+  font-weight: 100; /* Define si es negrita o normal de la letra */
+  line-height: 4rem;
+  display: inline;
+  text-align: center; /* Define si va estar a la derecha, al medio, a la izquiera y justificado */
+}
+
+@media (max-width: 992px) {
+  .site-heading {
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    line-height: 7;
+    font-family: "Raleway"; /* Define el tipo de letra */
+    text-align: center; /* Define si va estar a la derecha, al medio, a la izquiera y justificado */
+    display: flex;
+    margin: left;
+    justify-content: center;
+  }
+  .site-heading .site-heading-lower {
+    font-size: 4.8rem;
+    line-height: 3rem;
+    display: row;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .logo {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+.page-section {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.section-heading {
+  text-transform: uppercase;
+  display: inline-block;
+}
+.section-heading .section-heading-upper {
+  display: block;
+  font-size: 1.3rem; /* Define el tamaño de la letra */
+  font-weight: 800; /* Define si es negrita o normal de la letra */
+  padding-bottom: 0.5rem;
+}
+.section-heading .section-heading-lower {
+  display: block;
+  font-size: 2.8rem; /* Define el tamaño de la letra */
+  font-weight: 800; /* Define si es negrita o normal de la letra */
+}
+.section-heading .section-heading-under {
+  display: block;
+  font-size: 1rem; /* Define el tamaño de la letra */
+  text-transform: none;
+  font-weight: 300; /* Define si es negrita o normal de la letra */
+  margin-top: 5rem;
+}
+
+.section-heading-caja {
+  text-transform: uppercase;
+  display: inline-block;
+}
+.section-heading-caja .section-heading-upper-caja {
+  display: block;
+  font-size: 30rem; /* Define el tamaño de la letra */
+  font-weight: 800; /* Define si es negrita o normal de la letra */
+  padding-bottom: 0.5rem;
+}
+.section-heading-caja .section-heading-lower-caja {
+  display: block;
+  font-size: 3.5rem; /* Define el tamaño de la letra */
+  font-weight: 800; /* Define si es negrita o normal de la letra */
+}
+.section-heading-caja .section-heading-under-caja {
+  display: block;
+  font-size: 1rem; /* Define el tamaño de la letra */
+  text-transform: none;
+  font-weight: 300; /* Define si es negrita o normal de la letra */
+  margin-top: 5rem;
+}
+
+.section-heading-foto {
+  text-transform: uppercase;
+  display: inline-block;
+}
+.section-heading-foto .section-heading-upper-foto {
+  display: block;
+  font-size: 10rem; /* Define el tamaño de la letra */
+  font-weight: 800; /* Define si es negrita o normal de la letra */
+  padding-bottom: 0.5rem;
+}
+.section-heading-foto .section-heading-lower-foto {
+  display: block;
+  font-size: 3rem; /* Define el tamaño de la letra */
+  font-weight: 800; /* Define si es negrita o normal de la letra */
+}
+.section-heading-foto .section-heading-under-foto {
+  display: block;
+  font-size: 1rem; /* Define el tamaño de la letra */
+  text-transform: none;
+  font-weight: 300; /* Define si es negrita o normal de la letra */
+  margin-top: 5rem;
+}
+
+.section-heading-nos {
+  text-transform: uppercase;
+  display: inline-block;
+}
+.section-heading-nos .section-heading-upper-nos {
+  display: block;
+  font-size: 30rem; /* Define el tamaño de la letra */
+  font-weight: 800; /* Define si es negrita o normal de la letra */
+  padding-bottom: 0.5rem;
+}
+.section-heading-nos .section-heading-lower-nos {
+  display: block;
+  font-size: 4rem; /* Define el tamaño de la letra */
+  font-weight: 800; /* Define si es negrita o normal de la letra */
+}
+.section-heading-nos .section-heading-under-nos {
+  display: block;
+  font-size: 1rem; /* Define el tamaño de la letra */
+  text-transform: none;
+  font-weight: 300; /* Define si es negrita o normal de la letra */
+  margin-top: 5rem;
+}
+
+.section-heading-relato {
+  text-transform: uppercase;
+  display: inline-block;
+}
+.section-heading-relato .section-heading-upper-relato {
+  display: block;
+  font-size: 30rem; /* Define el tamaño de la letra */
+  font-weight: 800; /* Define si es negrita o normal de la letra */
+  padding-bottom: 0.5rem;
+}
+.section-heading-relato .section-heading-lower-relato {
+  display: block;
+  font-size: 4rem; /* Define el tamaño de la letra */
+  font-weight: 800; /* Define si es negrita o normal de la letra */
+}
+.section-heading-relato .section-heading-under-relato {
+  display: block;
+  font-size: 1rem; /* Define el tamaño de la letra */
+  text-transform: none;
+  font-weight: 300; /* Define si es negrita o normal de la letra */
+  margin-top: 5rem;
+}
+
+.mb-6 {
+  font-size: 1.4rem;
+}
+
+.mb-6-caja {
+  font-size: 1.7rem;
+}
+
+.mb-6-foto {
+  font-size: 1.7rem;
+}
+
+.mb-6-nos {
+  font-size: 1.9rem;
+}
+
+.mb-6-relato {
+  font-size: 1.7rem;
+}
+
+@media (max-width: 992px) {
+  .section-heading {
+    text-transform: uppercase;
+    display: inline-block;
+  }
+  .section-heading .section-heading-lower {
+    display: block;
+    font-size: 2.4rem; /* Define el tamaño de la letra */
+    font-weight: 800; /* Define si es negrita o normal de la letra */
+  }
+  .section-heading .section-heading-upper {
+    display: block;
+    font-size: 1.4rem; /* Define el tamaño de la letra */
+    font-weight: 800; /* Define si es negrita o normal de la letra */
+    padding-bottom: 0.5rem;
+  }
+  .section-heading .section-heading-under {
+    display: block;
+    font-size: 20rem; /* Define el tamaño de la letra */
+    text-transform: none;
+    font-weight: 300; /* Define si es negrita o normal de la letra */
+    margin-top: 50rem;
+  }
+  .mb-6 {
+    font-size: 1.45rem;
+  }
+  .mb-0 {
+    font-size: 1.6rem;
+  }
+  .section-heading-caja {
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 6rem;
+  }
+  .section-heading-caja .section-heading-lower-caja {
+    margin-top: -60%;
+    display: block;
+    font-size: 2rem; /* Define el tamaño de la letra */
+    font-weight: 800; /* Define si es negrita o normal de la letra */
+  }
+  .section-heading-caja .section-heading-under-caja {
+    display: block;
+    margin-top: 50rem;
+    font-size: 100rem; /* Define el tamaño de la letra */
+    text-transform: none;
+    font-weight: 300; /* Define si es negrita o normal de la letra */
+  }
+  .section-heading-foto {
+    text-transform: uppercase;
+    display: inline-block;
+    width: 20rem;
+    margin-top: 10rem;
+  }
+  .section-heading-foto .section-heading-lower-foto {
+    margin-top: -50%;
+    display: block;
+    font-size: 2rem; /* Define el tamaño de la letra */
+    font-weight: 800; /* Define si es negrita o normal de la letra */
+  }
+  .section-heading-foto .section-heading-under-foto {
+    display: block;
+    margin-top: 50rem;
+    font-size: 100rem; /* Define el tamaño de la letra */
+    text-transform: none;
+    font-weight: 300; /* Define si es negrita o normal de la letra */
+  }
+  .section-heading-nos {
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 6rem;
+  }
+  .section-heading-nos .section-heading-lower-nos {
+    margin-top: -65%;
+    display: block;
+    font-size: 2.5rem; /* Define el tamaño de la letra */
+    font-weight: 800; /* Define si es negrita o normal de la letra */
+  }
+  .section-heading-nos .section-heading-under-nos {
+    display: block;
+    margin-top: 50rem;
+    font-size: 100rem; /* Define el tamaño de la letra */
+    text-transform: none;
+    font-weight: 300; /* Define si es negrita o normal de la letra */
+  }
+  .section-heading-relato {
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 6rem;
+  }
+  .section-heading-relato .section-heading-lower-relato {
+    margin-top: -60%;
+    display: block;
+    margin-left: -1rem;
+    margin-top: -7rem;
+    font-size: 2.4rem; /* Define el tamaño de la letra */
+    font-weight: 800; /* Define si es negrita o normal de la letra */
+  }
+  .section-heading-relato .section-heading-under-relato {
+    display: block;
+    margin-top: 50rem;
+    font-size: 100rem; /* Define el tamaño de la letra */
+    text-transform: none;
+    font-weight: 300; /* Define si es negrita o normal de la letra */
+  }
+  .mb-6-caja {
+    font-size: 1.6rem;
+    margin-top: -4%;
+  }
+  .mb-6-foto {
+    font-size: 1.6rem;
+    margin-top: -5%;
+  }
+  .mb-6-nos {
+    font-size: 1.7rem;
+    margin-top: -1rem;
+  }
+  .mb-6-relato {
+    font-size: 1.9rem;
+    margin-top: -0.8rem;
+  }
+}
+#mainNav {
+  background-color: rgb(82, 209, 0); /* Define el color del fondo */
+  font-family: "Raleway";
+  width: 100%;
+  height: 8%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+#mainNav .navbar-nav {
+  flex-direction: row;
+}
+#mainNav .navbar-nav .nav-item .nav-link {
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 1000; /* Define si es negrita o normal de la letra */
+  flex-direction: row;
+}
+
+@media (min-width: 992px) {
+  #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: rgb(151, 252, 88);
+    text-decoration: underline; /* Define si el texto va a estar subrayado (underline), si va estar subrayado por arriba (overline) o tachando el texto (line-through) */
+    display: inline;
+    flex-direction: row;
+  }
+  #mainNav .navbar-nav .nav-item.active .nav-link:hover {
+    color: #ffffff;
+    text-decoration: underline; /* Define si el texto va a estar subrayado (underline), si va estar subrayado por arriba (overline) o tachando el texto (line-through) */
+  }
+}
+@media (max-width: 992px) {
+  #mainNav {
+    font-family: "Raleway";
+    background-color: rgb(82, 209, 0); /* Define el color del fondo */
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+  }
+  #mainNav .navbar-nav {
+    flex-direction: column;
+    width: 120%;
+  }
+}
+@media (min-width: 400px) {
+  #mainNav .navbar-nav .nav-item .nav-link {
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 1000; /* Define si es negrita o normal de la letra */
+    flex-direction: row;
+    font-size: 90%;
+  }
+}
+@media (min-width: 1200px) {
+  .intro .intro-text {
+    width: 70%; /* ancho */
+  }
+}
+.btn-xl {
+  font-weight: 700; /* Define si es negrita o normal de la letra */
+  font-size: 0.8rem; /* Define el tamaño de la letra */
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 250rem;
+  padding-right: 2rem;
+}
+
+@media (max-width: 992px) {
+  #mainNav {
+    font-family: "Raleway";
+    background-color: rgb(82, 209, 0); /* Define el color del fondo */
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+  }
+  #mainNav .navbar-nav {
+    flex-direction: column;
+    width: 120%;
+  }
+}
+@media (min-width: 400px) {
+  #mainNav .navbar-nav .nav-item .nav-link {
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 1000; /* Define si es negrita o normal de la letra */
+    flex-direction: row;
+    font-size: 90%;
+  }
+}
+@media (min-width: 1200px) {
+  .intro .intro-text {
+    width: 70%; /* ancho */
+  }
+}
+.btn-xl {
+  font-weight: 700; /* Define si es negrita o normal de la letra */
+  font-size: 0.8rem; /* Define el tamaño de la letra */
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 250rem;
+  padding-right: 2rem;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-caja {
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+
+.intro-foto {
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+
+.intro-nos {
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+
+.intro-relato {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+iframe {
+  width: 50rem;
+  height: 25rem;
+}
+
+@media (min-width: 400px) {
+  .intro-img {
+    width: 80%;
+  }
+  .intro-text {
+    background-color: rgb(24, 64, 8);
+    color: cornsilk; /* Define el color del texto de abajo */
+  }
+  .intro-img-caja {
+    width: 50%;
+  }
+  .intro-text-caja {
+    background-color: rgb(24, 64, 8);
+    color: cornsilk; /* Define el color del texto de abajo */
+  }
+  .intro-img-foto {
+    width: 40%;
+  }
+  .intro-text-foto {
+    background-color: rgb(24, 64, 8);
+    color: cornsilk; /* Define el color del texto de abajo */
+    width: 100%;
+  }
+  .intro-img-nos {
+    width: 45%;
+  }
+  .intro-text-nos {
+    background-color: rgb(24, 64, 8);
+    color: cornsilk; /* Define el color del texto de abajo */
+  }
+  .intro-relato {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+  }
+  .intro-img-relato {
+    width: 50%;
+  }
+  .intro-text-relato {
+    background-color: rgb(24, 64, 8);
+    color: cornsilk; /* Define el color del texto de abajo */
+    width: 60rem;
+  }
+}
+/* Para modificar la imagen */
+@media (max-width: 992px) {
+  .intro {
+    display: flex;
+    justify-content: center;
+  }
+  .intro .intro-img {
+    width: 80%; /* ancho */
+    height: 0%;
+  }
+  .intro .intro-text {
+    margin-left: 10px;
+    background-color: rgb(24, 64, 8); /* Define el color del fondo */
+    color: cornsilk; /* Define el color del texto de abajo */
+    position: relative;
+    height: 420px; /* alto del recuadro verde el título y subtítulo */
+  }
+  .intro .intro-text .intro-button {
+    width: 100%; /* ancho */
+    left: 0;
+    position: absolute;
+    bottom: -2rem;
+  }
+  .intro-caja {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: -3rem;
+  }
+  .intro-caja .intro-img-caja {
+    width: 55%; /* ancho */
+    height: 50%;
+  }
+  .intro-caja .intro-text-caja {
+    margin-left: 10px;
+    background-color: rgb(24, 64, 8); /* Define el color del fondo */
+    color: cornsilk; /* Define el color del texto de abajo */
+    position: relative;
+    width: 480px;
+    height: 400px; /* alto del recuadro verde el título y subtítulo */
+  }
+  .intro-caja .intro-text-caja .intro-button-caja {
+    width: 100%; /* ancho */
+    left: 0;
+    position: absolute;
+    bottom: -2rem;
+  }
+  .intro-foto {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: -3rem;
+  }
+  .intro-foto .intro-img-foto {
+    width: 56%; /* ancho */
+    height: 50%;
+  }
+  .intro-foto .intro-text-foto {
+    margin-left: 10px;
+    margin-top: 1px;
+    background-color: rgb(24, 64, 8); /* Define el color del fondo */
+    color: cornsilk; /* Define el color del texto de abajo */
+    position: relative;
+    width: 500px;
+    height: 360px; /* alto del recuadro verde el título y subtítulo */
+  }
+  .intro-foto .intro-text-foto .intro-button-foto {
+    width: 100%; /* ancho */
+    left: 0;
+    position: absolute;
+    bottom: -2rem;
+  }
+  .intro-nos {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: -3rem;
+  }
+  .intro-nos .intro-img-nos {
+    width: 21rem; /* ancho */
+  }
+  .intro-nos .intro-text-nos {
+    margin-left: 10px;
+    margin-top: 1px;
+    background-color: rgb(24, 64, 8); /* Define el color del fondo */
+    color: cornsilk; /* Define el color del texto de abajo */
+    position: relative;
+    font-size: 1.1rem;
+    width: 450px;
+    height: 290px; /* alto del recuadro verde el título y subtítulo */
+  }
+  .intro-nos .intro-text-nos .intro-button-nos {
+    width: 100%; /* ancho */
+    left: 0;
+    position: absolute;
+    bottom: -2rem;
+  }
+  .intro-relato .intro-img-relato {
+    width: 21rem; /* ancho */
+  }
+  .intro-relato .intro-text-relato {
+    margin-left: 10px;
+    margin-top: 1px;
+    background-color: rgb(24, 64, 8); /* Define el color del fondo */
+    color: cornsilk; /* Define el color del texto de abajo */
+    position: relative;
+    font-size: 1.1rem;
+    width: 580px;
+    height: 320px; /* alto del recuadro verde el título y subtítulo */
+  }
+  .intro-relato .intro-text-nos .intro-button-relato {
+    width: 100%; /* ancho */
+    left: 0;
+    position: absolute;
+    bottom: -2rem;
+  }
+}
+.contada {
+  height: 600px;
+  background-color: rgb(242, 245, 240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contada .contada-inner {
+  width: 100%;
+  height: 34%;
+  font-size: 130%;
+  text-align: center;
+  position: relative;
+  padding: 10rem;
+  margin: 3rem; /* Separación entre el borde y el afuera de la caja. Es parte del espacio externo. */
+  margin-top: 17.5rem;
+  margin-left: 0.2rem;
+  background-color: rgb(1, 78, 9); /* Define el color del fondo */
+  color: cornsilk;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 992px) {
+  .contada {
+    height: 400px;
+    background-color: rgb(242, 245, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contada .contada-inner {
+    width: 100%;
+    height: 60%;
+    font-size: 130%;
+    text-align: center;
+    position: relative;
+    padding: 4rem;
+    margin: 2rem; /* Separación entre el borde y el afuera de la caja. Es parte del espacio externo. */
+    margin-top: 6rem;
+    margin-left: 0.5rem;
+    background-color: rgb(1, 78, 9); /* Define el color del fondo */
+    color: cornsilk;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  iframe {
+    width: 33rem;
+    height: 20rem;
+  }
+}
+@media (min-width: 992px) {
+  .about-heading .about-heading-img {
+    position: relative;
+    z-index: 0;
+  }
+  .about-heading .about-heading-img .about-heading-content {
+    margin-top: -5rem;
+    position: relative;
+    z-index: 1;
+  }
+}
+.footer {
+  background-color: rgba(4, 47, 0, 0.8); /* Define el color del fondo */
+  text-align: center; /* Define si va estar a la derecha, al medio, a la izquiera y justificado */
+  height: 41%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 992px) {
+  .footer {
+    background-color: rgba(4, 47, 0, 0.8); /* Define el color del fondo */
+    text-align: center; /* Define si va estar a la derecha, al medio, a la izquiera y justificado */
+    height: 15rem;
+    width: 61rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer a {
+    font-size: 120%;
+  }
+}
+.btn {
+  box-shadow: 0px 3px 3px 0px rgba(0, 83, 20, 0.1);
+}
+
+.font-weight-light {
+  font-weight: 100 !important; /* Define si es negrita o normal de la letra */
+}
+
+a.link {
+  color: rgba(255, 255, 255, 0.7);
+}
+a.link:hover {
+  text-decoration: none; /* Define si el texto va a estar subrayado (underline), si va estar subrayado por arriba (overline) o tachando el texto (line-through) */
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.section-content {
+  font-family: "Lora" !important; /* Define el tipo de letra */
+  font-size: 16px !important; /* Define el tamaño de la letra */
+  font-weight: 400 !important; /* Define si es negrita o normal de la letra */
+  line-height: 28px !important;
+}
+
+/*# sourceMappingURL=styles.css.map */
